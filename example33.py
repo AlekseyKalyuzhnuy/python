@@ -1,2 +1,5 @@
 n = float(input('Введите дробное число: '))
-print(int(n*10)%10)
+if n==0:
+    print('нет дробное')
+else:
+    print(int(n*10%10))
