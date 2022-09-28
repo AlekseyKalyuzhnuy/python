@@ -3,5 +3,6 @@
 n= input('Введите число n:')
 result=[]
 for i in range(1, int(n)+1):
-    result.append([i,3*i+1])
+    elem=[i,3*i+1]
+    result.append(elem)
 print(dict(result))  # dict- тип переменной для словаря
