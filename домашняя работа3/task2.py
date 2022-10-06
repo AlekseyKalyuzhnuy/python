@@ -9,12 +9,12 @@ for i in range(0, int(n)):
     elem=int(input('Введите число: '))
     result.append(elem)
 print(result)  
+result2=[]
 for i in range(0, int(n/2)):
-   print(result[i]*result[n-1-i]) 
+   elem=(result[i]*result[n-1-i]) 
+   result2.append(elem)
+print(result2)
    
    
-
-
-
 
 
