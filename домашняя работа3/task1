@@ -1,0 +1,13 @@
+
+
+n= input('Введите размер списка:')
+result=[]
+sum=0
+for i in range(1, int(n)+1):
+    elem=int(input('Введите число: '))
+    result.append(elem)
+print(result)  
+for i in range(0, int(n)):
+    if i%2!=0:
+       sum=sum+result[i]
+print(sum)
