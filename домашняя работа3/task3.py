@@ -17,6 +17,13 @@ print(result2)
 max=result2[0]
 min=result2[0]
 for i in range(0, int (n)):
+    if result2[i]>max:
+        max=result2[i]
+    if result2[i]<min:
+        min=result2[i]
+print(max-min) 
+
+
 
 
 
