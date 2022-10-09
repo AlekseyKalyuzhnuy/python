@@ -3,9 +3,8 @@
 
 n = int(input('Введите размер списка: '))
 result=[]
-for i in range(0, int (n)):
-    elem=float(input('Введите число: '))
-    result.append(elem)
+for i in range(n):
+    result.append(float(input('Введите число: ')))
 # print(result)
 
 new_list = [round(i % 1 ,2) for i in result if i % 1 != 0]
