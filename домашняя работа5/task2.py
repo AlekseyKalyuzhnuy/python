@@ -16,23 +16,32 @@ while num>0:
         print("на столе нет столько конфет ") 
         n=0
         k=1
-      elif n<num and n<28: 
+      elif n<num and n<29: 
         num = num-n
         print(num)
         k=0
+      elif n==num and n<29:
+        print("победил игрок №1")
+        break
+    
 
     if k==0 : 
        k=int(input('игрок №2, ваш ход: '))
        if k> 28: 
          print("по условию игры можно брать не более 28 конфет в один ход")
          k=0
-       elif n>num: 
+       elif k>num: 
            print("на столе нет столько конфет ") 
            k=0
-       elif k<num and k<28: 
+       elif k<num and k<29: 
            num = num-k
            print(num)
            n=0
+       elif k==num and k<29:
+        print("Победил игрок №2")
+        break
+
+
      
 
 
